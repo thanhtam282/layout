@@ -8,6 +8,14 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 
+// Copy IMG
+gulp.task('copy', function () {
+  return gulp.src([
+      './src/img/**.*',
+    ])
+    .pipe(gulp.dest('./dist/img'));
+});
+
 // Nối file CSS
 gulp.task('noifile-css', function () {
   return gulp.src([
@@ -81,6 +89,7 @@ gulp.task('browser-sync', function () {
 // Lệnh mặc định của Gulp
 gulp.task('default', function () {
   gulp.start([
+    'copy',
     'noifile-css',
     'noifile-js',
     'taocss',
