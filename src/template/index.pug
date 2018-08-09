@@ -1,3 +1,35 @@
 extends _layout/layout.pug
 block main 
-	.abc HELLO CUDA
+	//- section.home_slider
+	//- 	.container
+	//- 		.row
+	//- 			.col
+	//- 				h1 Hi There! We are new kids on the block and we build awesome websites and mobile apps.
+	//- 				p
+	//- 					a.btn.btn-more(href="#") WORK WITH US
+	section.home_service
+		.container
+			.row.caption
+				.col.for_h2.text-center
+					h2 SERVICES WE PROVIDE
+					p 
+					| We are working with both individuals and businesses from all over globe
+					br
+					| to create awesome websites and applications.
+			.row.service_icon
+				.col.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_1.png", alt="")
+					h3 branding
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+				.col.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_2.png", alt="")
+					h3 design
+					p Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+				.col.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_3.png", alt="")
+					h3 development
+					p Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+				.col.col-sm-6.col-md-3
+					img.img-fluid(src="./img/home_icon_4.png", alt="")
+					h3 rocket science
+					p Et harum quidem rerum facilis est et expedita distinctio. Nam libero
