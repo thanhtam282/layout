@@ -4,6 +4,7 @@ $vang: #ffdd99 // Vang
 $do: #d74680 // Đỏ 
 $xanh: #3c5499 // Xanh
 $cam: #FF9633 // Cam
+$team: #27283d //Màu của section  thành viên
 
 @font-face
 	font-family: TitilliumWeb
@@ -35,8 +36,20 @@ header, main, footer
         font-family: TitilliumWeb-Bold
         font-size: 2.3rem
         margin-top: 70px
+        //position: relative
+        //padding: 4rem 0rem 1rem 0rem
+        &::before  
+				content: ""
+				//position: absolute
+				display: block
+				background: grey
+				width: 10%
+				height: 3px
+				bottom: 0px
+				left: 45%
+				opacity: .4
     p
-        margin-top: 40px
+        margin-top: 35px
         
 
 
@@ -49,7 +62,7 @@ header, main, footer
     justify-content: center
     text-align: center      
     align-items: center
-    flex-wrap: 
+
     .service_icon
         img
             padding: 41px
@@ -64,3 +77,19 @@ header, main, footer
             padding: 1px 40px 70px 40px
             margin-bottom: 88px
             
+.team
+    color: $team
+    background: #e7f1f8
+    justify-content: center
+    text-align: center      
+    align-items: center
+    img
+        border-radius: 50%        
+        padding: 20px
+    h3
+        margin-top: 30px
+        text-transform: uppercase
+        font-weight: bold
+    a.h4
+        color: blue
+        font-size: 1.1rem
